@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="X[3] <= 0.5\nentropy = 0.961\nsamples = 891\nvalue = [549, 342]"] ;
+1 [label="X[0] <= 2.5\nentropy = 0.824\nsamples = 314\nvalue = [81, 233]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="X[7] <= 0.5\nentropy = 0.299\nsamples = 170\nvalue = [9, 161]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.131\nsamples = 55\nvalue = [1, 54]"] ;
+2 -> 3 ;
+4 [label="entropy = 0.364\nsamples = 115\nvalue = [8, 107]"] ;
+2 -> 4 ;
+5 [label="X[7] <= 0.5\nentropy = 1.0\nsamples = 144\nvalue = [72, 72]"] ;
+1 -> 5 ;
+6 [label="entropy = 0.886\nsamples = 56\nvalue = [17, 39]"] ;
+5 -> 6 ;
+7 [label="entropy = 0.954\nsamples = 88\nvalue = [55, 33]"] ;
+5 -> 7 ;
+8 [label="X[0] <= 1.5\nentropy = 0.699\nsamples = 577\nvalue = [468, 109]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="X[1] <= 53.0\nentropy = 0.95\nsamples = 122\nvalue = [77, 45]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.981\nsamples = 100\nvalue = [58, 42]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.575\nsamples = 22\nvalue = [19, 3]"] ;
+9 -> 11 ;
+12 [label="X[1] <= 32.25\nentropy = 0.586\nsamples = 455\nvalue = [391, 64]"] ;
+8 -> 12 ;
+13 [label="entropy = 0.648\nsamples = 350\nvalue = [292, 58]"] ;
+12 -> 13 ;
+14 [label="entropy = 0.316\nsamples = 105\nvalue = [99, 6]"] ;
+12 -> 14 ;
+}
